@@ -1,0 +1,164 @@
+.container{
+    max-width: calc( 100vw - 236px );
+    margin: 30px 0 0 auto;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+
+.box ul {
+    width: 100%;
+    display: flex
+}
+
+.box ul li {
+    display: inline-block;
+    min-width: 100%;
+    position: relative;
+    left: 0;
+    transition-duration: 2s;
+    overflow: hidden;
+    height: 419px;
+
+    
+}
+
+.carrouselArrow{
+    background-color: whitesmoke;
+    width: 50px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: red;
+    cursor: pointer;
+
+}
+
+.hidden{
+    overflow: hidden;
+    display: flex;
+    max-height: 280px;
+    max-width: 70%;
+    border: 1px solid black;
+}
+
+.box ul li img{
+    width: 100%;
+    position: relative;
+    top: -100px;
+    
+}
+
+.box button{
+    height: 184px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    padding: 10px;
+       
+}
+
+.box button:hover{
+    filter: invert(1);
+    transition-duration: 700ms;
+}
+
+
+.buttonRight{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.buttonLeft {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.rightArrow {
+    rotate: 90deg;
+    max-width: 45px;
+    background-color: white;
+  }
+
+.leftArrow {
+    rotate: 270deg;
+    max-width: 45px;
+    background-color: white;
+  }
+
+.box button:disabled{   
+    cursor:pointer;
+}
+
+
+.rollRightOne {
+    left: -100%;
+    opacity: 0;
+}
+
+.BoxRollButtons{
+    margin: 10px auto;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.BoxRollButtons button {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: gray;
+    border:0
+}
+
+.BoxRollButtons button:not(:last-child){
+    margin-right: 10px;
+}
+
+.BoxRollButtons button:hover{
+    cursor: pointer;
+   
+}
+
+.BoxButtonSelected{
+    border: 2px solid black  !important;
+}
+
+.teste {
+    animation-name:testando;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes testando {
+    from { left: 0; } to {left: -100%;}
+    from { left: -100%; } to {left: -200%;}
+    
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
