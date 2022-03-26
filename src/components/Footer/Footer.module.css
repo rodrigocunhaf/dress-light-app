@@ -1,0 +1,28 @@
+.container {
+    background-color: #1D1128;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px
+}
+
+.box{
+    max-width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.boxLogo{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxLogo p{
+    margin-top: 10px;
+    font-size: 35px;
+}

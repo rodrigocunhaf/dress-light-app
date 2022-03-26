@@ -1,0 +1,60 @@
+.container{
+    display: flex;
+}
+.container p{
+    color: white;
+    margin: 9px 10px 0 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.display{
+    background-color: white;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.visible{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    position: absolute;
+    align-items: center;
+}
+
+.visible button {
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.visible button:hover{
+    background-color: rgb(186, 248, 227);
+}
+
+.visible hr{
+    max-width: 90%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: ;
+}
+
+.invisible{
+    display: none
+}

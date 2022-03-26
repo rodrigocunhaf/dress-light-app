@@ -9,7 +9,6 @@ const LateralMenu = ( props ) => {
                 <div>
                 </div>
                 <div className={style.boxButton}>
-                    <button type="submit">Logout</button>
                 </div>
         </div>)
 };

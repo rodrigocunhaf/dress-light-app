@@ -3,45 +3,57 @@
     padding: 10px 10px 10px 0;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     min-height: 56px;
     box-shadow:0 0 6px 1px black;
 }
 
-.boxLogo {
-    background-color: #1D1128;
-    max-width: 220px;
-    max-height: 75px;
-    height: 100%;
+.boxLimiter{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    max-width: 97%;
+    margin: 5px 30px;
+    justify-content: space-between;
 }
 
-.logoEnterprise{
+.boxLogo{
+    display: flex;
     max-width: 50px;
-    filter: invert(1);
 }
 
-.quanty{
-    text-align: center;
-    font-size: 20px;
-    width: 100px;
-    height: 30px;
+.box{
     display: flex;
-    justify-content: flex-end;
-    margin-top: 4px;
+    justify-content: space-between;
+    max-width: 95%;
+    align-items: center;
 }
 
-.quanty p {
-    font-size: 20px;
-    border-radius: 100%;
-    width: 20px;
-    height: 20px;
-    background-color: #C9ADA1;
-    padding: 5px;
-    border-radius: 100%;
+.boxUser{
+    color: white;
+    margin: 0 10px 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
 
+
+
+.boxCart{
+    max-width: 50px;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 10px;
+}
+
+.boxCart img {
+    max-width: 100%;
+    filter:invert(1);
+}
+
+.boxQuanty{
+    background-color: rgb(192, 112, 8);
+    padding: 5px;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
 }

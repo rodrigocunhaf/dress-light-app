@@ -1,0 +1,17 @@
+.logoEnterprise{
+    align-items: center;
+    
+}
+
+.logoEnterprise img{
+    max-width: 100%;
+    filter: invert(1);
+}
+
+.logoEnterprise p{
+    font-size: 25px;
+    color: white !important;
+    font-family: 'dressFont';
+    font-size: 25px;
+    
+}

@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@font-face {
+    font-family: dressFont;
+    src: url("./assets/fonts/Courgette-Regular.ttf");
+}
+
+@font-face {
+	font-family: roboto-mono;
+	src: url("./assets/fonts/Montserrat-Thin.ttf");
+}
 
 #root {
 	padding-top: 76px;
@@ -22,7 +30,6 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	font-family: 'Open Sans', sans-serif;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */

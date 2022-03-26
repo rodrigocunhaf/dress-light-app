@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import style from './ProductList.module.css';
 import imageProduct from "../../assets/icons/products.jpg"
+import ProductItem from './ProductItem';
+import FilterProducts from '../UI/Filter/FilterProducts';
 
 
 const items = [
@@ -57,22 +59,28 @@ const items = [
 
 const ProductList = ( ) => {
 
+    const [initialList, setList ] = useState(items);
+
+    const [productsByPage, setProductsByPage] =  useState(15)
+
+    const itensByPage =  ( itensByPage) => {
+        setProductsByPage(itensByPage)
+    };
+
+
     return  ( <div className={style.container}>
                     <div className={style.box}>
+                        <div className={style.filter}>
+                            <FilterProducts itensByPage={itensByPage}/>
+                        </div>
                         <ul>
-                            { items.map ( item => {
-                                return <li className={style.productCard}>
-                                            <div className={style.imageProduct}>
-                                                <img src={item.image}/>
-                                            </div>
-                                            <div className={style.infoProduct}>
-                                                <div className={style.price}>
-                                                    <p>R$ 150,00</p>
-                                                    <p>à vista ou 3xR$50,00</p>
-                                                </div>
-                                            </div>
-                                        </li>})}
+                            { items.slice(0, productsByPage).map ( (item, index) => {
+                                return ( 
+                                    <ProductItem key={index} image={item.image}/>
+                                )})}
                         </ul>
+                        <hr/>
+                        <div className={style.filter}></div>
                     </div>
             </div> )
 };
