@@ -9,6 +9,12 @@
     box-shadow:0 0 6px 1px black;
 }
 
+
+.limiter{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 .boxLimiter{
     display: flex;
     max-width: 97%;
@@ -54,18 +60,6 @@
     cursor: pointer;
     margin: 0 64px 0 auto;
     font-family: roboto-mono;
-}
-
-@media screen and (max-width:320px) {
-    .loginButton{
-        margin: 0;
-    }
-}
-
-@media screen and (min-width:321px) and (max-width:360px) {
-    .loginButton{
-        margin: 0 0 0 auto;
-    }
 }
 
 

@@ -6,6 +6,7 @@
     z-index: 1;
     bottom: 0;
     display: flex;
+    max-width: 1920px;
 }
 
 
@@ -126,10 +127,4 @@
     transition-duration: 0.7s;
     position: absolute;
     opacity: 0;
-}
-
-@media screen and (max-width:768px) {
-    .container{
-        max-width: 72%;
-    }   
 }

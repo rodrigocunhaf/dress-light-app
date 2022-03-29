@@ -1,6 +1,11 @@
 .container{
-    max-width: calc( 100vw - 236px );
+    max-width: 100vw;
     margin: 30px auto;
+}
+
+.limiter{
+    max-width: 1920px;
+    margin:0 auto;
 }
 
 .box {
@@ -146,50 +151,29 @@
     
 }
 
-@media screen and (max-width:320px) {
-    .hidden{
-        max-height: 211px;
-    }
-}
 
-@media screen and (min-width:321px) and (max-width:360px) {
-    .hidden{
-        max-height: 238px;
-    }
+@media only screen and (max-width:768px) {
 
-}
-
-
-@media screen and (max-width:425px) {
-    .container{
-        margin: 4px auto;
-    }
-
-    .box ul li img{
-        position: unset;
+    .box button {
+        display: none;
     }
 
     .hidden{
-        max-width: 100%;
+        max-height: none;
+        max-width: none;
     }
-
-    .buttonLeft, .buttonRight{
-        display: none !important;
-    }
-}
-
-@media screen and (max-width:1366px) {
-    
-    .container{
-        max-width: 100%;
+    .box img{
+        position: unset !important;
     }
 }
 
 
+@media only screen and (max-width:425px) {
 
-
-
-
+    .box ul li{
+        height: unset;
+    }
+}
 
 
 

@@ -1,8 +1,9 @@
 .productCard {
     width: 279px;
     height: 100%;
+    min-width: 279px;
     background-color: white;
-    margin-top: 30px;
+    margin: 30px 17px 0 17px;
     cursor: pointer;
     border-bottom-right-radius:  5px;
     border-bottom-left-radius:  5px;
@@ -62,44 +63,9 @@
 }
 
 
-
-.productCard:not(:nth-child(4n)){
-    margin-right: 30px;
-}
-
-
-@media screen and (max-width:320px) {
+@media only screen and (max-width:425px) {
+ 
     .productCard{
-        margin: 30px;
+        margin: 30px 36px 0 0;
     }
-}
-
-
-@media screen and (max-width:375px) {
-    .productCard{
-        margin: 20px 10px 0 10px ;
-    }
-}
-
-
-@media screen and (max-width:425px) {
-    
-    .productCard{
-        min-width: 279px;
-        margin: 20px 20px 0 20px;
-    }
-}
-
-
-@media screen and (max-width:1024px){
-
-    .productCard:not(:nth-child(4n)){
-        margin:0px;
-    }
-
-    .productCard:nth-child(n + 1){
-        margin-left: 10px;
-    }
-
-   
 }

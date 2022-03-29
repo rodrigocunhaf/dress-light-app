@@ -248,17 +248,23 @@ const ProductList = ( ) => {
         setList(items.slice(data.startIndex, data.finalIndex))
     };
 
+
+    console.log(window.screen.availWidth)
+
     return  ( <div className={style.container}>
                     <div className={style.box}>
                         <div className={style.filter}>
                             <FilterProducts itensByPage={itensByPage}/>
                         </div>
-                        <ul className={style.listData}>
-                            { initialList.slice(0,productsByPage).map ( (item, index) => {
-                                return ( 
-                                    <ProductItem key={index} image={item.image} name={item.name} price={item.price}/>
-                                )})}
-                        </ul>
+                        <div className={style.listHeight}>
+                            <ul className={style.listData}>
+                                
+                                { initialList.slice(0,productsByPage).map ( (item, index) => {
+                                    return ( 
+                                        <ProductItem key={index} image={item.image} name={item.name} price={item.price}/>
+                                    )})}
+                            </ul>
+                        </div>
                         <hr/>
                         <div className={style.filter}>
                             <Pagination items={items} productsByPage={productsByPage} getPage={getPage}/>

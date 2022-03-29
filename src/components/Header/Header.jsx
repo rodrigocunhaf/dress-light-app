@@ -23,18 +23,20 @@ const Header = ( props ) => {
 
     return (
         <header className={style.container}>
-            <Login isVisible={isVisible} onClickCloseLogin={onClickCloseLogin}/>
-            <div className={style.boxLimiter}>
-                <Logo componentClass={style.boxLogo}/>
-                    <div className={style.box}>
-                        { context.isLogged === 'true' ? <React.Fragment>
-                                                            <div className={style.boxUser}>
-                                                                <p>{context.username}</p>
-                                                                <button className={style.logout} onClick={context.logOut}>Logout</button>
-                                                            </div>
-                                                            <Cart/>
-                                                         : 
-                                                    </React.Fragment> : <button className={style.loginButton} onClick={onClickOpenLogin}>Login</button>}
+            <div className={style.limiter}>
+                <Login isVisible={isVisible} onClickCloseLogin={onClickCloseLogin}/>
+                <div className={style.boxLimiter}>
+                    <Logo componentClass={style.boxLogo}/>
+                        <div className={style.box}>
+                            { context.isLogged === 'true' ? <React.Fragment>
+                                                                <div className={style.boxUser}>
+                                                                    <p>{context.username}</p>
+                                                                    <button className={style.logout} onClick={context.logOut}>Logout</button>
+                                                                </div>
+                                                                <Cart/>
+                                                            : 
+                                                        </React.Fragment> : <button className={style.loginButton} onClick={onClickOpenLogin}>Login</button>}
+                    </div>
                 </div>
             </div>      
         </header>)

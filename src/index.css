@@ -12,6 +12,13 @@
 	padding-top: 76px;
 }
 
+@media only screen and (max-width:768px) {
+	
+	#root{
+		padding-top: 49px;
+	}
+}
+
 
 * {
     scrollbar-width: auto;

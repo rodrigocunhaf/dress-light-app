@@ -13,7 +13,6 @@ function App() {
       <AuthProvider>
         <CartProvider>
           <Header/>
-          <LateralMenu/>
           <ProductsCarrousel/>
           <ProductList/>
           <Footer/>

@@ -83,7 +83,7 @@ const ProductsCarrousel = ( props ) => {
     })
 
     return (<div className={style.container} >
-                <div>
+                <div className={style.limiter}>
                     <div className={style.box}>
                         <button className={`${style.carrouselArrow && style.buttonLeft}`} onClick={onClickLeft} disabled={ position === 0 ? true : false}><img className={style.leftArrow} src={arrowImage}/></button>
                         <div className={style.hidden}>
