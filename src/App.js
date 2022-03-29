@@ -5,19 +5,22 @@ import ProductsCarrousel from "./components/ProductsCarroussel/ProductsCarrousel
 import ProductList from "./components/ProductArea/ProductList";
 import AuthProvider from "./store/AuthContext";
 import Footer from "./components/Footer/Footer";
+import CartProvider from "./store/CartContext";
+
 
 function App() {
-
   return (
-    <AuthProvider>
-      <Header/>
-      <LateralMenu/>
-      <ProductsCarrousel/>
-      <ProductList/>
-      <Footer/>
-    </AuthProvider>
+      <AuthProvider>
+        <CartProvider>
+          <Header/>
+          <LateralMenu/>
+          <ProductsCarrousel/>
+          <ProductList/>
+          <Footer/>
+        </CartProvider>
+      </AuthProvider>
   );
-}
+};
 
 export default App;
 

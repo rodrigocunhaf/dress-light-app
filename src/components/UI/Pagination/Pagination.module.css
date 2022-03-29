@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    }
+
+.button{
+    border: 0;
+    background-color: white;
+    font-size: 18px;
+    border-radius: 100%;
+    min-width: 30px;
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.button:hover{
+    background-color:rgb(247, 247, 97)
+}
+
+.more{
+    background-color: white;
+}

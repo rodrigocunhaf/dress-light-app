@@ -3,7 +3,7 @@ import style from "./FilterProducts.module.css";
 
 const FilterProducts = ( props ) => {
 
-    const [selectValue, setSelectValue] =  useState(15);
+    const [selectValue, setSelectValue] =  useState(10);
     const [isVisible, setIsVisible] =  useState(false)
 
     const onSelectedPages = ( event) => {

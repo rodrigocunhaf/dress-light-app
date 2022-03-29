@@ -145,8 +145,45 @@
     from { left: -100%; } to {left: -200%;}
     
 }
-    
 
+@media screen and (max-width:320px) {
+    .hidden{
+        max-height: 211px;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:360px) {
+    .hidden{
+        max-height: 238px;
+    }
+
+}
+
+
+@media screen and (max-width:425px) {
+    .container{
+        margin: 4px auto;
+    }
+
+    .box ul li img{
+        position: unset;
+    }
+
+    .hidden{
+        max-width: 100%;
+    }
+
+    .buttonLeft, .buttonRight{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:1366px) {
+    
+    .container{
+        max-width: 100%;
+    }
+}
 
 
 

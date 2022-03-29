@@ -1,0 +1,135 @@
+.modalLogin {
+    background-color: rgba(0, 0, 0, 0.459);
+    width: 100%;
+    position: fixed;
+    height: calc(100vh - 80px);
+    z-index: 1;
+    bottom: 0;
+    display: flex;
+}
+
+
+.container{
+    background-color: white;
+    max-width: 30%;
+    width: 100%;
+    padding: 10px 30px 0 40px;
+    border-radius: 20px;
+    max-height: 355px;
+    box-shadow: 0 0 6px 2px black;
+    margin: auto auto;
+
+}
+
+.container .close{
+    border: 0;
+    font-size: 18px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    padding: 5px;
+    margin: 0 0 0 auto;
+    cursor: pointer;
+}
+
+.container .close {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.modalLogin form{
+    background-color: white;
+}
+
+.modalLogin form label{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: roboto-mono;
+};
+
+.modalLogin input{
+    display: block;
+    
+}
+
+.modalLogin span {
+    font-size: 13px;
+    min-height: 13px;
+    padding: 5px 0 5px 0;
+    margin: 5px 0 5px 0 ;
+    display: block;
+}
+
+.modalLogin input{
+    width: 100%;
+    box-sizing: border-box;
+    height: 35px;
+    margin:10px 0 0 0;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.modalLogin input:focus{
+    box-shadow: 0 0 3px 1px;
+    outline: 0;
+    border:0;
+}
+
+.modalLogin .boxButton {
+    width: 100%;
+    margin: 50px 0  50px 0;
+}
+
+.modalLogin form button{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 10px;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: roboto-mono;
+    font-weight: bold;
+    border: 0;
+    background-color: rgb(64, 165, 64);
+    border-radius: 3px;
+}
+
+.modalLogin form button:hover{
+    background-color: rgb(223, 223, 35);
+    border: 1px solid black;
+}
+
+.modalLogin form button:disabled{
+    background-color: gray
+}
+
+
+.hidden{
+    display: none !important;
+}
+
+.boxValidation .validated {
+    color: green;
+    transition-duration: 0.7s;
+    position: absolute;
+    opacity: 0;
+}
+
+
+.boxValidation .invalid {
+    color: red;
+    transition-duration: 0.7s;
+    position: absolute;
+    opacity: 0;
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        max-width: 72%;
+    }   
+}

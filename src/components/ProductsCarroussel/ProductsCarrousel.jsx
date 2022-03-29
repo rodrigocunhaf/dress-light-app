@@ -89,7 +89,7 @@ const ProductsCarrousel = ( props ) => {
                         <div className={style.hidden}>
                             <ul className={`${style.listProducts}` } >
                                 {itemsList.map( (item,index) => {
-                                    return <li style={{left:position+'%'}} key={index}><img src={item.image}/>{item.id}</li>
+                                    return <li style={{left:position+'%'}} key={index}><img src={item.image}/></li>
                                 })}
                             </ul>
                         </div>

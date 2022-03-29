@@ -34,26 +34,39 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
-
-.boxCart{
-    max-width: 50px;
-    display: flex;
-    align-items: flex-end;
-    margin-left: 10px;
+.boxUser .logout{
+    border: 0;
+    margin: 5px 5px 0 0;
+    padding: 6px;
+    font-weight: bold;
+    border-radius: 70px;
+    background-color: orange;
+    cursor: pointer;
 }
 
-.boxCart img {
-    max-width: 100%;
-    filter:invert(1);
+.loginButton{
+    color: orange;
+    border: 0;
+    background-color: #1d112800;
+    font-weight: bold;
+    margin: 0 ;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 64px 0 auto;
+    font-family: roboto-mono;
 }
 
-.boxQuanty{
-    background-color: rgb(192, 112, 8);
-    padding: 5px;
-    width: 10px;
-    height: 10px;
-    display: flex;
-    align-items: center;
-    border-radius: 50px;
+@media screen and (max-width:320px) {
+    .loginButton{
+        margin: 0;
+    }
 }
+
+@media screen and (min-width:321px) and (max-width:360px) {
+    .loginButton{
+        margin: 0 0 0 auto;
+    }
+}
+
+
+

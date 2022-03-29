@@ -4,6 +4,9 @@
     background-color: white;
     margin-top: 30px;
     cursor: pointer;
+    border-bottom-right-radius:  5px;
+    border-bottom-left-radius:  5px;
+    overflow: hidden;
 }
 
 
@@ -13,6 +16,21 @@
 
 .productCard img{
     max-width: 100%;
+}
+
+.productCard button {
+    width: 100%;
+    border: 0;
+    background-color: rgb(64, 165, 64);
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.productCard button:hover{
+    background-color: rgb(247, 247, 97);
+    color: black;
 }
 
 .infoProduct{
@@ -43,6 +61,45 @@
     font-size: 13px;
 }
 
+
+
 .productCard:not(:nth-child(4n)){
     margin-right: 30px;
+}
+
+
+@media screen and (max-width:320px) {
+    .productCard{
+        margin: 30px;
+    }
+}
+
+
+@media screen and (max-width:375px) {
+    .productCard{
+        margin: 20px 10px 0 10px ;
+    }
+}
+
+
+@media screen and (max-width:425px) {
+    
+    .productCard{
+        min-width: 279px;
+        margin: 20px 20px 0 20px;
+    }
+}
+
+
+@media screen and (max-width:1024px){
+
+    .productCard:not(:nth-child(4n)){
+        margin:0px;
+    }
+
+    .productCard:nth-child(n + 1){
+        margin-left: 10px;
+    }
+
+   
 }

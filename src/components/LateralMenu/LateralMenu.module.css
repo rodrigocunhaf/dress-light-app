@@ -48,3 +48,10 @@
     font-size: 18px;
     font-family:'Open Sans', sans-serif
 }
+
+
+@media screen and (max-width:1366px) {
+    .container{
+        display: none;
+    }
+}

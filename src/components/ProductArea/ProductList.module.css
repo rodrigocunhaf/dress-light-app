@@ -26,7 +26,7 @@
     margin-bottom: 30px;
 }
 
-.box ul {
+.box .listData {
     padding: 0px 40px 30px 40px;
     display: flex;
     flex-wrap:wrap;
@@ -35,3 +35,40 @@
     justify-content: flex-start;
 }
 
+
+
+@media screen and (max-width:374px) {
+    .box .listData{
+        width: 63% !important;
+        padding: 0px 73px 30px 8px;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:425px) {
+    .box{
+        min-height: unset;
+    }
+
+    .box .listData{
+        flex-wrap: unset;
+        overflow-x: scroll;
+        width:65%;
+    }
+    
+}
+@media screen and (min-width:1024px) and (max-width:1365px) {
+    .box .listData{
+        max-width: 100% ;
+        margin: 0 64px 0 64px;
+    }
+}
+
+@media screen and (max-width:1366px) {
+    .container{
+        max-width: 100%
+    }
+
+    .box .listData{
+        max-width: 90% ;
+    }
+}

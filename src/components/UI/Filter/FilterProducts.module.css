@@ -58,3 +58,10 @@
 .invisible{
     display: none
 }
+
+@media screen and (max-width:320px) {
+    
+    .display{
+        width: 60px;
+    }
+}
