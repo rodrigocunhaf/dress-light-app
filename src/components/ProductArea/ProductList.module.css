@@ -75,6 +75,10 @@
         overflow-x: scroll;
         width: 76%;
     }
+
+    .listHeight{
+        min-height: unset;
+    }
 }
 
 

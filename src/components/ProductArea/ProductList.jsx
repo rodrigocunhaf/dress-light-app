@@ -264,10 +264,10 @@ const ProductList = ( ) => {
                                         <ProductItem key={index} image={item.image} name={item.name} price={item.price}/>
                                     )})}
                             </ul>
-                        </div>
                         <hr/>
                         <div className={style.filter}>
                             <Pagination items={items} productsByPage={productsByPage} getPage={getPage}/>
+                        </div>
                         </div>
                     </div>
             </div> )
