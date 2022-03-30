@@ -1,7 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
+import ReactDOM from "react-dom";
 import style from "./Login.module.css";
 import validator from "validator";
-import { AuthContext } from "../../store/AuthContext"
+import { AuthContext } from "../../store/AuthContext";
+import { CartContext  } from "../../store/CartContext";
 
 const Login = ( props) => {
 
@@ -12,7 +14,9 @@ const Login = ( props) => {
     const [password, setPassword] = useState('');
     const [isValidEPassword, setIsValidPassword] = useState(false);
 
-    const authContext = useContext(AuthContext)
+    const authContext = useContext(AuthContext);
+
+    const cartContext = useContext (CartContext);
 
 
     const onChangeSetEmail =  ( event ) => {
@@ -35,6 +39,7 @@ const Login = ( props) => {
         props.onClickCloseLogin(false)
         setEmail('');
         setPassword('');
+        cartContext.cleanCart();
     };
 
     useEffect ( ( ) => {
@@ -56,7 +61,7 @@ const Login = ( props) => {
 
     },[email,password]);
 
-    return (
+    return ReactDOM.createPortal(
         <div className={`${style.modalLogin} ${props.isVisible === false ? style.hidden : ''}`}>
             <div className={style.container}>
                 <button className={style.close} onClick={setInvisible}>x</button>
@@ -86,7 +91,7 @@ const Login = ( props) => {
                 </form>
             </div>
         </div>
-    )
+    , document.getElementById("login") )
 };
 
-export default Login;
+export default Login ;

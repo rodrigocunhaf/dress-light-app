@@ -64,3 +64,22 @@
 
 
 
+@media only screen and (max-width:425px) {
+    
+    .boxUser{
+        position: fixed;
+        background-color: #1D1128;
+        display: flex;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        justify-content: space-between;
+        padding: 5px;
+        align-items: center;
+    }
+
+
+    .boxUser .logout{
+        margin: 5px 34px 0 0;
+    }
+}

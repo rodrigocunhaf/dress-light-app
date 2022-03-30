@@ -1,5 +1,5 @@
 .modalLogin {
-    background-color: rgba(0, 0, 0, 0.459);
+    background-color: rgba(0, 0, 0, 0);
     width: 100%;
     position: fixed;
     height: calc(100vh - 80px);
@@ -98,6 +98,7 @@
     border: 0;
     background-color: rgb(64, 165, 64);
     border-radius: 3px;
+    max-width: 100%;
 }
 
 .modalLogin form button:hover{
@@ -127,4 +128,13 @@
     transition-duration: 0.7s;
     position: absolute;
     opacity: 0;
+}
+
+
+@media  only screen and (max-width:768px){
+
+    .container{
+        max-width: 80%;
+    }
+    
 }

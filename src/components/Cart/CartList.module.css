@@ -3,5 +3,10 @@
     min-height: 686px;
 }
 
-
+@media only screen and (max-width:425px) {
+    
+    .cartList{
+        min-height: 415px;
+    }
+}
  

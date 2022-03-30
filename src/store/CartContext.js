@@ -42,6 +42,11 @@ const CartProvider =  ( props ) => {
         
     };
 
+    const cleanCart  = ( ) => {
+        setProducts([]);
+        setTotal(0);
+    };
+
     const removeProductInCart = ( product ) =>{
 
         const index = products.findIndex ( productInList => { return productInList.name === product.name});
@@ -74,7 +79,7 @@ const CartProvider =  ( props ) => {
     };
 
     return  (
-        <CartContext.Provider value={ {products,total, addProductInCart, removeProductInCart } }>
+        <CartContext.Provider value={ {products,total, addProductInCart, removeProductInCart, cleanCart } }>
             {props.children}
         </CartContext.Provider>
     );

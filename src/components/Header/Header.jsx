@@ -3,8 +3,7 @@ import style from "./Header.module.css"
 import { AuthContext } from "../../store/AuthContext";
 import Logo from "../Logo/Logo";
 import Cart from "../Cart/Cart";
-import Login from "../Login/Login.jsx"
-
+import Login from "../Login/Login.jsx";
 
 const Header = ( props ) => {
 
