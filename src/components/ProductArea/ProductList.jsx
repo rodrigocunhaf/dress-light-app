@@ -245,11 +245,9 @@ const ProductList = ( ) => {
 
 
     const getPage =  ( data ) => {
-        setList(items.slice(data.startIndex, data.finalIndex))
+        setList(items.slice(data.startIndex, data.finalIndex));
+        document.querySelector(`.ProductList_listData__hWI3k`).scrollTo(0,0);
     };
-
-
-    console.log(window.screen.availWidth)
 
     return  ( <div className={style.container}>
                     <div className={style.box}>

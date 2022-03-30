@@ -38,6 +38,7 @@
     margin:0 auto;
     justify-content: flex-start;
     
+    
 }
 
 
@@ -46,6 +47,8 @@
     .box .listData{
         width: 70%;
     }
+
+
 }
 
 
@@ -63,7 +66,7 @@
     }
 }
 
-@media only screen and (max-width:426px){
+@media only screen and (max-width:767px){
 
     .box{
         width: 350px;

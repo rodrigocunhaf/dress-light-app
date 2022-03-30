@@ -24,7 +24,7 @@ const Pagination = ( props ) => {
     const getPage = ( event ) => {
         const obj = {
             startIndex: Number(event.target.value) * props.productsByPage - props.productsByPage,
-            finalIndex: Number(event.target.value) * props.productsByPage
+            finalIndex: Number(event.target.value) * props.productsByPage,
         };
 
         props.getPage(obj)
